@@ -1,0 +1,221 @@
+body{
+    background-color: #F7F7FF;
+}
+/*mobile 375px-------------------------------------------------------------------*/
+.wrapper{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/*image sizes*/
+.logo{
+    height: 81.05px;
+    width: 114.73px;
+}
+.scooter{
+    height: 211.53px;
+    width: 289.23px;
+    /*centers scooter*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*whitespace for scooter*/
+    padding: 2rem;
+}
+/*general text rules in header*/
+h1{
+    font-family: "montserrat";
+    font-weight: bold;
+    font-size: 60pt;
+    color: #333131;
+}
+h3{
+    font-family: "montserrat";
+    font-weight: normal;
+    font-size: 24pt;
+    color: #333131;
+    text-align: center;
+}
+/*form 1 appearance*/
+.form1{
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 10%;
+    margin-bottom: 5em;
+
+    box-shadow: 10px 10px 30px grey;
+}
+input{
+    width: 90%;
+    /*padding*/
+    margin-bottom: 1rem;
+    padding: 1rem;
+    /*boarder*/
+    border: 0pt;
+    border-radius: 15px;
+    /*text properties*/
+    font-family: "montserrat";
+    font-weight: normal;
+    font-size: 16pt;
+    /*color*/
+    color: #333131;
+    background-color: #F4F4F5;
+}
+/*text in form 1*/
+h2{
+    font-family: "montserrat";
+    font-weight: bold;
+    font-size: 40pt;
+    color: #333131;
+}
+/*e-y-i-b is the class to target the first paragraph in the fieldset tag*/
+.e-y-i-b{
+    font-family: "montserrat";
+    font-weight: normal;
+    font-size: 16pt;
+    color: #9B9B9B;
+    padding: 1rem;
+    padding-left: 0rem;
+}
+fieldset:nth-child(6){
+    display: flex;
+    padding: 1rem;
+    flex: start;
+}
+/*replacing checkbox*********************************************************************************************************/
+/*hides checkbox*/
+.checkbox-container input[type="checkbox"]{
+    display: none;
+} 
+/*new checkbox*/
+.checkbox-container{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-family: "montserrat";
+    user-select: none;
+}
+.checkbox-container .check-box{
+    /*preset*/
+    display: inline-block;
+    font-size: 16pt;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border: solid #000;
+    border-width: 1.5px 1.5px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0; 
+}
+    /*when pressed*/
+.checkbox-container input:checked + .check-box{
+    background-color: #f4f4f5;
+}
+    /*on hover*/
+.checkbox-container:hover .check-box{
+    background-color: #f4f4f5;
+}
+    /*after check action*/
+.checkbox-container input:checked + .check-box:after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 9px;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+/*text beside checkbox*/
+.i-a-t-d-t{
+    margin-top: 2px;
+    margin-left: 50px;
+    font-family: "montserrat";
+    font-weight: normal;
+    font-size: 16pt;
+    color: #333131;
+    margin-bottom: 1em;
+}
+/*********************************************************************************************************************************************/
+/*styles for DRIVE WITH US button*/
+.button-green{
+    border: none;
+    background-color: #57eeab;
+    font-family: "montserrat";
+    color: #333131;
+    font-weight: bold;
+    font-size: 24pt;
+    border-radius: 10px;
+    padding: .5em;
+    width: 100%;
+    text-align: center;
+    margin: auto auto;
+}
+
+
+.last-text-in-form-1{
+    display: flex;
+}
+.a-a{
+    margin-top: 2em;
+    font-family: "montserrat";
+    font-size: 14pt;
+    color: #333131;
+}
+/*styles for link next to 'i agree to dash terms'*/
+.c-y-a-s-h:visited, .c-y-a-s-h:active, .c-y-a-s-h:link, .c-y-a-s-h:hover{
+    color: #ff8480;
+    text-decoration: none;
+}
+footer{
+    background-color: #fffd8c;
+    padding: 3em;
+}
+h4{
+    font-family: "montserrat";
+    font-size: 18pt;
+    font-weight: bold;
+    color: #333131;
+    padding-bottom: 1em;
+}
+footer p{
+    color: red;
+    font-family: "montserrat";
+    font-size: 16pt;
+    color: #333131;
+    padding-bottom: 2em;
+}
+.calc-input-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.hours{
+    flex-basis: calc(20% - 1px);
+}
+.city{
+    flex-basis: calc(66% - 1px);
+    padding-right: none;
+    margin-right: .3em;
+    
+}
+.red-button{
+    border: none;
+    background-color: #FF8480;
+    font-family: "montserrat";
+    color: #F7F7FF;
+    font-weight: bold;
+    font-size: 24pt;
+    border-radius: 10px;
+    padding: 0.25em;
+    width: 100%;
+    text-align: center;
+    margin: auto auto;
+}
+.social-media-foot{
+    display: flex;
+    padding-top: 3em;
+    justify-content: space-around;
+}
