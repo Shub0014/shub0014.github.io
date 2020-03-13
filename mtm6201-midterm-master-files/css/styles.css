@@ -130,10 +130,9 @@ a:link, a:visited, a:hover, a:active{
     flex-wrap: wrap;
     margin-top: 3rem;
 }
-.sunset{
-    width:100%;
-    display: block;
-
+.sunset-with-text .sunset{
+    padding-bottom: 2rem;
+    height: auto;
 }
 
 /*header 2*/
@@ -180,6 +179,7 @@ a:link, a:visited, a:hover, a:active{
     margin: 3.5rem auto 0 auto;
     border-radius: 6rem;
     width: 178px;
+    height: 178px;
     height: auto;
 }
 .grey-block-sa-president h3{
@@ -566,19 +566,20 @@ footer .social-media-links .soci-link{
     .grey-block-sa-president p{
         margin: 0rem;
         margin-left: 3rem;
-        width: 24rem;
+        
     }
     .grey-block-sa-president h3{
         margin: 0rem;
-        margin-top: 2rem;
-        margin-left: 2rem;
+        margin-left: -10rem;
+        margin-top: 15rem;
         font-size: 24pt;
-        width: 15rem;
     }
     .simon{
         margin-left: 4rem;
         width: 175px;
+        height: 175px;
     }
+    
     /*about page------------------------------------------------------------------------------------------------------------*/
     /*bring back the images*/
     .bar-counter, .bowling-shoes, .weights, .rock-wall{
@@ -685,8 +686,15 @@ footer .social-media-links .soci-link{
         margin: 0;
         margin-left: 2rem;
     }
-    .discover-the-entertainment{
-        
+
+    #second-green{
+        margin: 0;
+    }
+    .sunset-with-text{
+        padding-top: 8rem;
+        padding-bottom: 5rem;
+        padding-right: 4rem;
+        background-color: #F2F2F2;
     }
     
 }
