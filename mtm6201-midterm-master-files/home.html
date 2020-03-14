@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,ARC,AC,Algonquin College,Rock climbing,">
+    <meta name="Christen Shubaly" content="ARC A new fitness centre for algonquin.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -9,7 +12,7 @@
 </head>
 <body>
     <nav class = "nav-bar">
-        <img src="img/arc-logo-header.png" class= "header-logo">
+        <img src="img/arc-logo-header.png" class= "header-logo" alt="ARC logo">
         <a class="home-link active" href="home.html">Home</a>
         <a class="about-link" href="about.html">About</a>
         <a class="contact-link" href="contact.html">Contact</a>
@@ -22,19 +25,19 @@
             <!--four categories buttons -->
             <div class="four-categories-buttons">
                 <div class= "bowling">
-                    <img src="img/icons/Icon awesome-bowling-ball.png" alt="Bowling Ball">
+                    <img src="img/icons/Icon-awesome-bowling-ball.png" alt="Bowling Ball">
                     <p>Bowling</p>
                 </div>
                 <div class="rock-climbing">
-                    <img src="img/icons/Icon map-climbing.png" alt="Rock Climbing">
+                    <img src="img/icons/Icon-map-climbing.png" alt="Rock Climbing">
                     <p>Rock Climbing</p>
                 </div>
                 <div class="fitness-center">
-                    <img src="img/icons/Icon map-gym.png" alt="Fitness Center">
+                    <img src="img/icons/Icon-map-gym.png" alt="Fitness Center">
                     <p>Fitness Center</p>
                 </div>
                 <div class="indoor-court">
-                    <img src="img/icons/Icon awesome-basketball-ball.png" alt="Indoor Court">
+                    <img src="img/icons/Icon-awesome-basketball-ball.png" alt="Indoor Court">
                     <p>Indoor Court</p>
                 </div>
             </div>
@@ -54,15 +57,16 @@
             </picture>
         </div>
     </article>
+    <!-- cant seem to fix the mobile and tablet views -->
     <div class="sunset-with-text">
-        <div class="sunset-container">
+        
             <picture class= "sunset">
                 <source class="sunset" srcset="img/people-throwing-grad-caps/people-throwing-grad-caps-desktop.jpg" media="(min-width: 1280px)">
                 <source class="sunset" srcset="img/people-throwing-grad-caps/people-throwing-grad-caps-tablet.jpg" media="(min-width: 768px)">
-                <source class="sunset" srcset="img/people-throwing-grad-caps/people-throwing-grad-caps-mobile.jpg" media="(max-width: 375px)">
+                <source class="sunset" srcset="img/people-throwing-grad-caps/people-throwing-grad-caps-mobile.jpg" media="(min-width: 375px)">
                 <img class="sunset" src="img/people-throwing-grad-caps/people-throwing-grad-caps-mobile.jpg" alt="People throwing Grad Caps in the Sunset">
             </picture>
-        </div>
+        
         <div class="discover-the-entertainment indent">
             <h2>Discover.</h2>
             <h3>The entertainment</h3>
@@ -83,17 +87,17 @@
     </div>
     <div class="bar-scene">
         <picture class= "bar-scene-image">
-            <source class= "bar-scene-image" srcset="img/bar-scene/bar-scene-desktop.jpg" media="(min-width: 1280px)">
-            <source class= "bar-scene-image" srcset="img/bar-scene/bar-scene-tablet.jpg" media="(min-width: 768px)">
-            <source class= "bar-scene-image" srcset="img/bar-scene/bar-scene-mobile-l.jpg" media="(min-width: 500px)">   
-            <source class= "bar-scene-image" srcset="img/bar-scene/bar-scene-mobile.jpg" media="(min-width: 375px)">
+            <source class= "bar-scene-image" srcset="img/bar-scene/bar-scene-desktop.jpg" media="(max-width: 1280px)">
+            <source class= "bar-scene-image" srcset="img/bar-scene/bar-scene-tablet.jpg" media="(max-width: 768px)">
+            <source class= "bar-scene-image" srcset="img/bar-scene/bar-scene-mobile-l.jpg" media="(max-width: 500px)">   
             <img class= "bar-scene-image" src="img/bar-scene/bar-scene.jpg" alt="Two people drinking at a bar.">
         </picture>
-
-        <h2 class="indent">Discover.</h2>
-        <h3 class="indent">The entertainment</h3>
-        <p class="indent">at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a variety of events. Now with the coming of the ARC facility, not only will it be providing more space for the students to study, but it will also be bringing in more room for late-night entertainment.</p>
-        <div class="learnmore">
+        <div>
+            <h2 class="indent">Discover.</h2>
+            <h3 class="indent">The entertainment</h3>
+            <p class="indent">at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a variety of events. Now with the coming of the ARC facility, not only will it be providing more space for the students to study, but it will also be bringing in more room for late-night entertainment.</p>
+        </div>
+        <div class="learnmore" id="greenthird">
             <h3>Learn More</h3>
         </div>
     </div>
@@ -111,7 +115,7 @@
         <div>
             <picture>
                 <source srcset="img/icons/up@2x.png" media="(min-width: 1280px)">
-                <source srcset="img/icons/up.png" media="(min-width: 375px">
+                <source srcset="img/icons/up.png" media="(min-width: 375px)">
                 <img src="img/icons/up.png" alt="up">
             </picture>
             <p>back to top</p>
