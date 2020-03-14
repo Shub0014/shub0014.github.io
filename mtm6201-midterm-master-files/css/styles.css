@@ -104,6 +104,7 @@ a:link, a:visited, a:hover, a:active{
 }
 /*green button get started*/
 .green-button-getting-started{
+    animation: click;
     margin-left: auto;
     margin-right: auto;
     background-color: #26A682;
@@ -761,4 +762,16 @@ footer .social-media-links .soci-link{
         margin-right: 8rem;
     }
 
+}
+/*animations*/
+@keyframes click{
+    0%{
+        transform: scale(1);
+      }
+    90%{
+        transform: scale(1.2);
+      }
+    100%{
+        transform: scale(1); 
+    }
 }
