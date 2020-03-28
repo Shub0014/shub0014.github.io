@@ -10,10 +10,12 @@
 
     <title>Bootstrap This!</title>
   </head>
+
+  <!-- bg on page -->
   <body>
 
     <!-- navgation -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <a href="#" class="navbar-brand">
           <img src="/img/Band-Of-Skarlett-Blades.png" alt="my logo">
       </a>
@@ -29,15 +31,121 @@
           </div>
       </div>
     </nav>
-
     <!-- jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron bg-muted m-0 .text-secondary">
       <div class="container">
-        <h1 class="display-4">Jumbotron</h1>
-        <p class="lead">A sleek versitile element used to draw attention to an aspect on a page.</p>
+        <h1 class="display-2">Jumbotron</h1>
+        <p class="lead">A sleek versatile element used to draw attention to an aspect on a page.</p>
       </div>
     </div>
-
+    <!-- cards -->
+    <h1 class="bg-danger text-white mb-0 p-5 text-center display-2">Cards</h1>
+    <div class="container-fluid">
+      <div class="row">
+              <!-- Card 1 -->
+              <div class="col-sm-6 col-lg-4 bg-dark">
+                <div class="card text-dark w-50 m-5">
+                  <img class="card-img-top" src="img/purple-french-lavenders-close-up-photography-1313258.jpg" alt="purple french lavenders">
+                  <div class="card-body">
+                    <h1 class="card-title">Card</h1>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-sm-6 col-lg-4 bg-secondary">
+                <div class="card text-dark w-50 m-5">
+                  <img class="card-img-top" src="img/close-up-photography-of-pink-flowers-1408221.jpg" alt="pink flowers">
+                  <div class="card-body">
+                    <h5 class="card-title">A component that has two main sections; an image and a discription.</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-sm-6 col-lg-4 bg-dark">
+                  <div class="card text-dark w-50 m-5">
+                    <img class="card-img-top" src="img/red-petaled-flower-729005.jpg" alt="red petaled flower">
+                    <div class="card-body">
+                    <h5 class="card-title">The card is an adaptation of panels, wells, and thumbnails from Bootstrap 3.</h5>
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="col-sm-6 col-lg-4 bg-secondary">
+                  <div class="card text-dark w-50 m-5">
+                    <img class="card-img-top" src="img/abstract-art-artistic-blur-279376.jpg" alt="digital lily">
+                    <div class="card-body">
+                      <h5 class="card-title">The .card-body deals with padding within the card component.</h5>
+                    </div>
+                  </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="col-sm-6 col-lg-4 bg-dark">
+                  <div class="card text-dark w-50 m-5">
+                    <img class="card-img-top" src="img/black-and-white-flower-dandelion-minimal-21323.jpg" alt="white dandelion">
+                    <div class="card-body">
+                      <h5 class="card-title">The .card-img-top is responsible for linking an image to the card component.</h5>
+                    </div>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="col-sm-6 col-lg-4 bg-secondary">
+                  <div class="card text-dark w-50 m-5">
+                    <img class="card-img-top" src="img/macro-photography-of-white-poppy-flower-1469664.jpg" alt="white poppy">
+                    <div class="card-body">
+                      <h5 class="card-title">The .card-link attribute governs all links relating to the card by using anchors < a > tags.</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+      </div>
+      <!-- Spinners -->
+      <h1 class="bg-danger text-white mb-0 p-5 text-center display-2">Spinners</h1>
+      
+      <div class="bg-dark text-white m-0">
+        <p class="display-4 p-5">Built solely in HTML and CSS, and remarkably no JavaScript. The spinner is a component used to indicate a state of loading...</p>
+      </div>
+      
+      <div class="container w-75">
+        <div class="row p-5 m-auto">
+          <div class="col-sm-6 col-lg-1 bg-white">
+            <div class="spinner-border text-primary" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-1 bg-white">
+            <div class="spinner-border text-secondary" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-1 bg-white">
+            <div class="spinner-border text-success" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-1 bg-white">
+            <div class="spinner-border text-warning" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-1 bg-white">
+            <div class="spinner-border text-info" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-1 bg-white">
+            <div class="spinner-border text-dark" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="display-4 text-white bg-dark text-center text-align-center">
+        <a href="index.html" class="text-danger"><p class="w-25 p-5 m-auto font-weight-light">Back to the top</p></a>
+      </footer>          
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
