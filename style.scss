@@ -1,0 +1,18 @@
+//imports
+@import "var";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:wght@300&display=swap');
+
+//imported fonts
+
+//colors + font
+body{
+    background-color: $bgcolor;
+}
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    color: $offwhite;
+}
+
+//navigation
+
