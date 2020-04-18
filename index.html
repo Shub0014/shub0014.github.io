@@ -27,7 +27,12 @@
     
     <div class="home left-margins">
         <h1>Hi, I'm <span>Christen Shubaly</span> Front-end Web developer!</h1>
-        <img src="img/cstart-logo-greenBM.png" alt="logo_Cstart">
+        <picture class="cstart">
+            <source class="cstart" srcset="img/cstart/cstart-logo-green-desktop.png" media="(min-width: 1280px)">
+            <source class="cstart" srcset="img/cstart/cstart-logo-green-tablet.png" media="(min-width: 768px)">
+            <source class="cstart" srcset="img/cstart/cstart-logo-green-mobile.png" media="(max-width: 375px)">
+            <img class="cstart" src="img/cstart/cstart-logo-green-mobile.png" alt="cstart-logo">
+        </picture>
     </div>
 
     <aside class="wave1-container">
@@ -39,21 +44,23 @@
         </picture>
     </aside>
 
-    <div class="about left-margins">
+    <div class="about left-margins" id="about">
 
         <h1>About Me:</h1>
-
+        
         <picture class="christen-shubaly">
             <source srcset="img/me/me-desktop.png" media="(min-width: 1280px)">
             <source srcset="img/me/me-tablet.png" media="(min-width: 768px)">
             <source srcset="img/me/me-mobile.png" media="(max-width: 375px)">
             <img src="img/me/me-mobile.png" alt="christen-shubaly">
         </picture>
-        <div>
+        <div class = "lines">
             <p>I'm a front-end web developer connected to information technology for a while.</p>
             <p>I'm an Artistic visionary, critical thinker, active listener, team member who has a thirst for knowledge and a desire for success. I enjoy Linux, reading, TV series, cosplay and spending time with family.</p>
             <p>I take an Interest in learning about the front-end spectrum of web development.</p>
         </div>
+        
+       
     </div>
 
     <aside class="wave2">
@@ -100,14 +107,18 @@
         </div>
         <div class="form">
             <form action="">
-                
+                <div>
                     <input type="text" id="name" name="name" placeholder="Full Name">
                 
                     <input type="text" id="email" name="email" placeholder="Email">
+                </div>
                
                     <input type="text" id="subject" name="subject" placeholder="Subject">
-                
-                    <textarea name="message" rows="5" cols="14" placeholder="Full Name"></textarea>
+                    <br>
+                    <div>
+                        <textarea name="message" rows="5" cols="14" placeholder="Message" id="message"></textarea>
+                    </div>
+                    <br>
 
                     <input type="submit" id="btn" name="submit" value="Submit">
             </form>

@@ -36,6 +36,7 @@ body {
 
 header {
   position: fixed;
+  top: 0;
 }
 
 .overlay {
@@ -190,7 +191,6 @@ h1:nth-child(1) span {
 }
 
 div.home img {
-  width: 225px;
   height: auto;
   margin: 2rem 0rem 0 8rem;
 }
@@ -298,5 +298,63 @@ div.home img {
 .contact form input:nth-child(5) {
   background-color: #00B9AE;
   text-align: left;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 42pt;
+  }
+  p {
+    color: #F8F7F2;
+    font-size: 24pt;
+  }
+  .left-margins {
+    margin: 5rem;
+  }
+  h1:nth-child(1) {
+    width: 45rem;
+    line-height: 52pt;
+  }
+  .cstart {
+    margin: 2rem 0rem 0 4rem;
+  }
+  .about h1 {
+    margin: -27rem 2.5rem 0rem 3rem;
+  }
+  .about img {
+    margin: 7rem 0 0 3rem;
+  }
+  .about p {
+    line-height: 40pt;
+  }
+  .about p:nth-child(1) {
+    margin: -6rem -2.5rem 0rem 20rem;
+  }
+  .form {
+    width: 45rem;
+  }
+  .form .contact form input, .form .contact form textarea {
+    margin: 0;
+    padding: 0;
+    width: 275px;
+    font-size: 22pt;
+  }
+  .form .contact form input::-webkit-input-placeholder, .form .contact form textarea::-webkit-input-placeholder, .form .contact form input:-ms-input-placeholder, .form .contact form textarea:-ms-input-placeholder, .form .contact form input::-ms-input-placeholder, .form .contact form textarea::-ms-input-placeholder, .form .contact form input::-webkit-input-placeholder, .form .contact form textarea::-webkit-input-placeholder {
+    font-size: 14pt;
+  }
+  .form .contact form input::-webkit-input-placeholder, .form .contact form textarea::-webkit-input-placeholder, .form .contact form input:-ms-input-placeholder, .form .contact form textarea:-ms-input-placeholder, .form .contact form input::-ms-input-placeholder, .form .contact form textarea::-ms-input-placeholder, .form .contact form input::placeholder, .form .contact form textarea::placeholder {
+    font-size: 14pt;
+  }
+  .form #subject {
+    width: 38.18rem;
+  }
+  .form .contact form input:nth-child(5) {
+    background-color: #00B9AE;
+    text-align: left;
+  }
+  .form .contact form #Message {
+    width: 80%;
+    color: red;
+  }
 }
 /*# sourceMappingURL=style.css.map */
